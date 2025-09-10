@@ -2,7 +2,6 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Login from './Login';
 import Dashboard from './Dashboard';
 
-
 function App() {
   const navigate = useNavigate();
 
