@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { apiurl } from '../config/const';
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
@@ -10,7 +11,7 @@ const Login = ({ onLogin }) => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3000/api/login', {
+      const response = await fetch(apiurl + '/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -157,7 +158,7 @@ const Login = ({ onLogin }) => {
                     <div className="flex items-center">
                       <input type="checkbox" id="remember" name="remember" className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" />
                       <label htmlFor="remember" className="ml-2 text-gray-600 dark:text-gray-400">
-                        Recuérdame
+                        Recordar contraseña
                       </label>
                     </div>
                   </div>

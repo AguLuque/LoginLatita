@@ -571,10 +571,10 @@ const AnalyticsPage = () => {
 // Página de Perfil
 const ProfilePage = () => {
   const [userInfo, setUserInfo] = useState({
-    name: 'Juan Pérez',
-    email: 'juan.perez@ejemplo.com',
+    name: 'Latita',
+    email: 'Latita@gmail.com',
     phone: '+54 11 1234-5678',
-    location: 'Buenos Aires, Argentina'
+    location: 'Cordoba, Argentina'
   });
 
   return (
@@ -597,7 +597,7 @@ const ProfilePage = () => {
             <h2 style={{ fontSize: '20px', fontWeight: 'bold', color: '#111827' }}>
               {userInfo.name}
             </h2>
-            <p style={{ color: '#6b7280' }}>Miembro desde Enero 2024</p>
+            <p style={{ color: '#6b7280' }}>Miembro desde Septiembre 2025</p>
           </div>
         </div>
 
